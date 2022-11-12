@@ -1,0 +1,204 @@
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato"), local("Lato-Regular"), url(../fonts/Lato/Lato-Regular.ttf) format("truetype");
+}
+:root {
+  --primary-color: #21272d;
+  --secondary-color: cornflowerblue;
+  --third-color: cornflowerblue;
+  --fourth-color: rgba(177, 247, 244, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  --fifth-color: cornflowerblue;
+}
+
+.dark_mode {
+  --primary-color: #fff;
+  --secondary-color: greenyellow;
+  --third-color: greenyellow;
+  --fourth-color: salmon;
+  --fifth-color: #000;
+  --seventh-color: #af99f4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body {
+  background-color: hsl(251deg, 70%, 55%);
+  background-image: radial-gradient(at 89% 14%, hsl(163deg, 81%, 50%) 0px, transparent 50%), radial-gradient(at 11% 15%, hsl(163deg, 82%, 50%) 0px, transparent 50%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#nameIt {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px blanchedalmond;
+}
+
+#nameIt {
+  font-family: "Lato";
+  color: var(--fifth-color);
+  text-align: center;
+  margin-top: 50px;
+  font-size: 32px;
+}
+
+#nameItSection {
+  border-radius: 10px;
+  height: 100%;
+  width: 90%;
+  border: 3px solid var(--third-color);
+  position: relative;
+  margin: 5% auto;
+  padding: 5px;
+  background-color: var(--fourth-color);
+}
+
+.darkModeButton {
+  height: 25px;
+  width: 120px;
+  margin: 15px auto;
+  display: block;
+  background: var(--secondary-color);
+  color: var(--sixth-color);
+  border: none;
+  border-radius: 100px;
+  transition: 100px ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+h1 {
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* ========= AB HIER AUFGABE ========= */
+.main .aside .first_aside,
+.main .aside .second_aside,
+.main .aside .third_aside,
+.main .aside .fourth_aside {
+  border: 0.2rem solid rgba(0, 0, 255, 0.678);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 6rem;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 1.5rem;
+}
+
+h1,
+h2 {
+  font-size: 1rem;
+}
+
+.nav_links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  background-color: rgba(0, 0, 255, 0.514);
+}
+
+li {
+  padding: 1rem;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.main h3 {
+  text-align: center;
+}
+.main .section_text,
+.main .section_images {
+  margin: 1rem;
+}
+.main .section_images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main img {
+  height: 12rem;
+  width: 18rem;
+  margin: 0 0.5rem 1rem 0.5rem;
+}
+.main .aside {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin: 1rem;
+}
+@media screen and (min-width: 600px) {
+  .main .aside .aside {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .main .aside .aside .first_aside,
+.main .aside .aside .second_aside,
+.main .aside .aside .third_aside,
+.main .aside .aside .fourth_aside {
+    width: 45%;
+    margin: 0.5rem;
+  }
+}
+
+.footer {
+  height: 5rem;
+  margin-top: 1rem;
+  background-color: rgba(0, 0, 255, 0.678);
+}
+.footer .footer_links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .section_images {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .section_text {
+    width: 70%;
+  }
+}/*# sourceMappingURL=style.css.map */
